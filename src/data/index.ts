@@ -15,6 +15,14 @@ export const overview = `
 Welcome to the Certified DevSecOps Professional (CDP) preparation roadmap.
 As a senior engineer, this roadmap skips the basics (Docker, Git, K8s) and focuses 90% on hands-on DevSecOps implementation, pipeline architecture, and security tooling.
 
+## What You'll Learn
+- **CI/CD Pipeline Security**: Integrate SCA, SAST, and DAST in pipelines. Catch vulnerabilities before production and balance security with development velocity.
+- **Security Test Automation**: Automate testing across the entire SDLC using GitLab CI, OWASP ZAP, and Ansible to reduce manual security bottlenecks.
+- **Infrastructure as Code**: Apply IaC and Compliance as Code techniques using Ansible and Inspec for consistency to maintain security standards across environments.
+- **DevSecOps Maturity Model**: Progress from DSOMM Level 0 to Level 2. Build systematic improvement programs, measure, and track security maturity.
+- **Vulnerability Management**: Create customized tracking systems, integrate security with existing workflows, and transform security into a competitive advantage.
+- **Real-World Implementation**: Apply DevSecOps strategies through labs. Implement infrastructure-as-code security and automate compliance and vulnerability scanning.
+
 ## Objectives
 1. Build an Enterprise-Grade DevSecOps Pipeline from scratch.
 2. Master SAST, DAST, SCA, Secrets Detection, and IaC Security.
