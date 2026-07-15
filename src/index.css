@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  .markdown-body {
+    @apply text-gray-800 leading-relaxed font-sans;
+  }
+  .markdown-body h1 {
+    @apply text-3xl font-bold mt-8 mb-6 pb-2 border-b border-gray-200 text-gray-900;
+  }
+  .markdown-body h2 {
+    @apply text-2xl font-bold mt-10 mb-4 text-gray-900;
+  }
+  .markdown-body h3 {
+    @apply text-xl font-semibold mt-8 mb-3 text-gray-900;
+  }
+  .markdown-body p {
+    @apply mb-4 text-gray-700;
+  }
+  .markdown-body ul {
+    @apply list-disc list-outside ml-6 mb-4 space-y-2 text-gray-700;
+  }
+  .markdown-body ol {
+    @apply list-decimal list-outside ml-6 mb-4 space-y-2 text-gray-700;
+  }
+  .markdown-body li {
+    @apply pl-1;
+  }
+  .markdown-body strong {
+    @apply font-semibold text-gray-900;
+  }
+  .markdown-body em {
+    @apply italic;
+  }
+  .markdown-body blockquote {
+    @apply border-l-4 border-indigo-500 bg-indigo-50 pl-4 py-2 mb-4 rounded-r-md italic text-gray-800;
+  }
+  .markdown-body code {
+    @apply bg-gray-100 text-pink-600 px-1.5 py-0.5 rounded-md text-sm font-mono border border-gray-200;
+  }
+  .markdown-body pre {
+    @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6 font-mono text-sm shadow-md;
+  }
+  .markdown-body pre code {
+    @apply bg-transparent text-gray-100 p-0 rounded-none border-none text-sm;
+  }
+  .markdown-body a {
+    @apply text-indigo-600 hover:text-indigo-800 underline decoration-indigo-300 underline-offset-2;
+  }
+  .markdown-body hr {
+    @apply my-8 border-gray-200;
+  }
+  .markdown-body table {
+    @apply min-w-full divide-y divide-gray-300 mb-6 border border-gray-200 rounded-lg overflow-hidden;
+  }
+  .markdown-body th {
+    @apply bg-gray-50 px-4 py-3 text-left text-sm font-semibold text-gray-900;
+  }
+  .markdown-body td {
+    @apply px-4 py-3 text-sm text-gray-700 border-t border-gray-200;
+  }
+}
